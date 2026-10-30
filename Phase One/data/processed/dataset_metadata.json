@@ -1,0 +1,18 @@
+{
+  "n_samples": 200,
+  "n_features": 4,
+  "n_train": 160,
+  "n_test": 40,
+  "feature_range": [
+    0.0,
+    3.141592653589793
+  ],
+  "class_balance_train": {
+    "0": 80,
+    "1": 80
+  },
+  "class_balance_test": {
+    "0": 20,
+    "1": 20
+  }
+}

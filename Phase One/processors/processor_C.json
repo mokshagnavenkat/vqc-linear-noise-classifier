@@ -1,0 +1,265 @@
+{
+  "name": "Processor_C",
+  "num_qubits": 14,
+  "basis_gates": [
+    "rz",
+    "sx",
+    "x",
+    "cx"
+  ],
+  "authoritative_coupling_map": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      5,
+      0
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      6,
+      7
+    ],
+    [
+      7,
+      8
+    ],
+    [
+      8,
+      9
+    ],
+    [
+      9,
+      10
+    ],
+    [
+      10,
+      4
+    ],
+    [
+      2,
+      11
+    ],
+    [
+      11,
+      12
+    ],
+    [
+      12,
+      13
+    ],
+    [
+      13,
+      8
+    ]
+  ],
+  "bidirectional_coupling_map": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      11
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      4,
+      3
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      4,
+      10
+    ],
+    [
+      5,
+      0
+    ],
+    [
+      5,
+      4
+    ],
+    [
+      6,
+      4
+    ],
+    [
+      6,
+      7
+    ],
+    [
+      7,
+      6
+    ],
+    [
+      7,
+      8
+    ],
+    [
+      8,
+      7
+    ],
+    [
+      8,
+      9
+    ],
+    [
+      8,
+      13
+    ],
+    [
+      9,
+      8
+    ],
+    [
+      9,
+      10
+    ],
+    [
+      10,
+      4
+    ],
+    [
+      10,
+      9
+    ],
+    [
+      11,
+      2
+    ],
+    [
+      11,
+      12
+    ],
+    [
+      12,
+      11
+    ],
+    [
+      12,
+      13
+    ],
+    [
+      13,
+      8
+    ],
+    [
+      13,
+      12
+    ]
+  ],
+  "synthetic_noise_model": {
+    "gate_error_1q": 0.001,
+    "gate_error_2q_cx": 0.005,
+    "readout_error": 0.01
+  },
+  "graph_properties": {
+    "processor": "Processor_C",
+    "num_qubits": 14,
+    "num_edges": 16,
+    "is_connected": true,
+    "diameter": 5,
+    "radius": 4,
+    "avg_path_length": 2.7802,
+    "avg_degree": 2.286,
+    "max_degree": 4,
+    "clustering_coefficient": 0.0,
+    "algebraic_connectivity": 0.3601,
+    "node_connectivity": 2,
+    "edge_connectivity": 2,
+    "center_nodes": [
+      2,
+      3,
+      4,
+      6,
+      10,
+      11
+    ],
+    "periphery_nodes": [
+      0,
+      1,
+      5,
+      7,
+      8,
+      9,
+      12,
+      13
+    ],
+    "degree_dict": {
+      "0": 2,
+      "1": 2,
+      "2": 3,
+      "3": 2,
+      "4": 4,
+      "5": 2,
+      "6": 2,
+      "7": 2,
+      "8": 3,
+      "9": 2,
+      "10": 2,
+      "11": 2,
+      "12": 2,
+      "13": 2
+    }
+  },
+  "transpilation_baseline": {
+    "optimization_level": 1,
+    "seed": 42,
+    "shots": 4096
+  }
+}

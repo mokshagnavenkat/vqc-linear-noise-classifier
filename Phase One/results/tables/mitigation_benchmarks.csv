@@ -1,0 +1,10 @@
+processor,regime,mitigation,accuracy,error_rate,mitigation_gain,estimated_fidelity,circuit_depth,cx_count
+Ideal_Statevector,Ideal (Noise-Free),none,85.0,15.0,0.0,1.0000,18,12
+Processor_A,Noisy Unmitigated,none,80.0,20.0,0.0,0.7877,51,24
+Processor_A,Readout Inversion (REM),rem,80.0,20.0,0.0,0.7877,51,24
+Processor_A,Zero-Noise Extrapolation (ZNE),zne,77.5,22.5,-2.5,0.7877,51,24
+Processor_A,Full Hybrid (ZNE + REM),both,80.0,20.0,0.0,0.7877,51,24
+Processor_B,Noisy Unmitigated,none,80.0,20.0,0.0,0.8036,30,12
+Processor_B,Readout Inversion (REM),rem,80.0,20.0,0.0,0.8036,30,12
+Processor_B,Zero-Noise Extrapolation (ZNE),zne,85.0,15.0,5.0,0.8036,30,12
+Processor_B,Full Hybrid (ZNE + REM),both,85.0,15.0,5.0,0.8036,30,12

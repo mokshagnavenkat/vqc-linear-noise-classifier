@@ -1,0 +1,55 @@
+{
+  "processor_id": "team_example_linear5_v1",
+  "n_qubits": 5,
+  "coupling_map": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      4,
+      3
+    ]
+  ],
+  "native_gate_set": [
+    "rx",
+    "ry",
+    "rz",
+    "cx"
+  ],
+  "qubit_layout": "linear",
+  "noise_assumptions": {
+    "single_qubit_error_rate": 0.001,
+    "two_qubit_error_rate": 0.01,
+    "readout_error_rate": 0.02,
+    "t1_us": 100,
+    "t2_us": 80,
+    "notes": "Conservative superconducting estimates. Not used by the Task B benchmark."
+  },
+  "design_rationale": "EXAMPLE ONLY - not a recommended design. Linear 5-qubit chain with two-way links for a layered nearest-neighbour ansatz. Rx/Ry/Rz/CX are universal and match the benchmark basis. A chain keeps every qubit at degree 2 or less, at the cost of SWAPs for long-range gates such as those in QFT-3.",
+  "benchmark_results": {}
+}

@@ -1,0 +1,74 @@
+{
+  "processor_id": "processor_d_q3_ring5_v1",
+  "n_qubits": 5,
+  "coupling_map": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      4,
+      3
+    ],
+    [
+      4,
+      0
+    ],
+    [
+      0,
+      4
+    ]
+  ],
+  "native_gate_set": [
+    "rx",
+    "ry",
+    "rz",
+    "h",
+    "x",
+    "sx",
+    "cx"
+  ],
+  "qubit_layout": "ring",
+  "noise_assumptions": {
+    "single_qubit_error_rate": 0.001,
+    "two_qubit_error_rate": 0.01,
+    "readout_error_rate": 0.02,
+    "t1_us": 120.0,
+    "t2_us": 100.0,
+    "notes": "Superconducting transmon processor parameters with symmetric bidirectional flux-tunable couplers."
+  },
+  "design_rationale": "A 5-qubit bidirectional ring graph matches the 4-qubit ring-CNOT entanglement layout of the PS-Q3 classification circuit, completely eliminating routing SWAP gate insertion overhead while natively supporting the 3-qubit QFT benchmark structure.",
+  "benchmark_results": {
+    "qft3_circuit_depth_before_transpile": 6,
+    "qft3_circuit_depth_after_transpile": 20,
+    "qft3_two_qubit_gate_count": 12,
+    "qft3_swap_overhead": 1,
+    "qft3_fidelity_ideal": 1.0,
+    "qft3_fidelity_noisy": 0.611593,
+    "benchmark_noise_model_version": "QFF2026-v2"
+  }
+}

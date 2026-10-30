@@ -1,0 +1,28 @@
+# =============================================================================
+# Qiskit Fall Fest 2026: Phase 1 Authoritative Requirements
+# Track 4 (QML) - PS-Q3: Noise-Resilient Classification & Error Mitigation
+# =============================================================================
+
+# Core Quantum Framework & High-Performance Noise Simulation
+qiskit>=1.0.0
+qiskit-aer>=0.14.0
+qiskit-algorithms>=0.3.0
+cirq-core>=1.3.0
+
+# Quantum Error Mitigation (Zero-Noise Extrapolation)
+mitiq>=0.25.0
+
+# Scientific Computing, Optimization & Machine Learning
+scikit-learn>=1.3.0
+scipy>=1.11.0
+numpy>=1.24.0
+pandas>=2.0.0
+
+# Graph Theory & Network Topologies
+networkx>=3.0
+
+# Publication-Grade Visualizations & Rendering
+matplotlib>=3.7.0
+
+# Utilities
+tqdm>=4.65.0
